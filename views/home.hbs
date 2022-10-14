@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    {{>navbar}}
+
+    <section class="banner">
+        <div>
+            <div class="sun"><img src="/images/suncloud.png" alt=""></div>
+            <div class="temp">
+                <h1 id="tempr">30<sup>o</sup></h1>
+                <h4 id="humid">30<sup>o</sup>/20<sup>o</sup></h4>
+            </div>
+        </div>
+        <div>
+            <div class="location">
+                <img width="30px" height="30px" src="/images/location.png" alt="">
+                <h2 id="city_name">Bangalore <br></h2>
+
+
+            </div>
+            <h2 id="displayDateTime"></h2>
+            <div>
+                <img src="/images/banne-img-right.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="poster">
+        <div id="text">
+            <h1> Weather Assistant <br>
+                <span>
+                    In your Phone </span>
+            </h1>
+            <h6> Find Out Rain and floods beckon as La <br> Nina looms and IOD deepens.</h6>
+            <a href="/weather"><button>Check Weather</button></a>
+        </div>
+        <div id="image"><img src="/images/mob1.png" alt=""></div>
+        <div><img width="382px" height="544px" src="/images/mob2.png" alt=""></div>
+    </section>
+    <section>
+
+        {{>footer}}
+    </section>
+
+
+</body>
+
+
+
+ <script>
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var today = new Date();
+    let month = months[today.getMonth()];
+    let day = today.getDate()
+    let year = today.getFullYear()
+    document.getElementById("displayDateTime").innerHTML = month + ' ' + day + ',' + year;
+</script> 
+
+</html>

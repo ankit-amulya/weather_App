@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner{
+    margin: 0px 0px;
+    background-image: url(/images/sky2.jpg);
+    background-repeat: no-repeat; 
+    width: 100%;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden
+   
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 8px 120px;
+    background-color: rgb(247, 245, 245)!important
+}
+.nav_logo{
+    padding-top: 10px;
+}
+.nav_links a{
+    text-decoration: none;
+}
+
+.nav_links li  {
+    
+   list-style: none;
+   padding-right: 30px;
+   font-size: 19px;
+   /* font-family: sans-serif; */
+   padding-top: 10px;
+   cursor: pointer;
+}
+.nav_links li:hover{
+    scale: 1.12;
+}
+.nav_links button:hover{
+    scale: 1.12;
+}
+.nav_links ul{
+    display: flex;
+}
+.nav_links button{
+    background-color: #00AEF5;
+    border-radius: 5px;
+    padding: 6px 22px;
+    font-size: 17px;
+    border: 0px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+.banner h1{
+    font-size: 80px;
+    padding-top: 0px;
+   
+       
+}
+.banner h4{
+    font-size: 50px;
+    margin-top:20px ;
+    
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.location{
+    display: flex;
+    align-items: center;
+    padding-left: 380px;
+    padding-bottom: 15px;
+}
+#displayDateTime{
+    padding-left: 360px;
+    border: 0px;
+    margin-top: -8px;
+}
+
+.sun img {
+    margin-top:-100px;
+    margin-left:5px;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {height:90px; width:90px}
+    25%  {height:100px; width:100px}
+    50%  {height:90px; width:90px}
+    75%  {height:100px; width:100px}
+    100% {height:90px; width:90px}
+  }
+  .footer{
+    background-color: #180a3f;
+    color: white;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer h4{
+    padding-top: 15px;
+  }
+  .footerouter{
+    background-color: #180a3f;
+    color: white;
+  }
+  .footerouter p{
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .weather{
+    background: url('/images/pexels-tom-fisk-2739666.jpg');
+    background-size: cover;
+    height: 90vh;
+  }
+  .searchInput{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+  }
+  #search{
+    border: none;
+    background-color: white;
+    border-bottom-left-radius: 5px ;
+    border-top-left-radius: 5px;
+    height: 40px;
+    width: 600px;
+  }
+  #btn{
+    border: none;
+    padding: 8px 30px;
+    font-size: 20px;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px;
+    background-color: lavender;
+    
+
+  }
+  .weatherInfo{
+    color: white;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  .card{
+    background-color:rgba(0,0,0,0.4) ;
+    height: 240px;
+    width: 210px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+
+  }
+.card h3, .card p{
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.poster{
+    background-image: linear-gradient(to left top, #e7e7e7, #e0e4f1, #d0e4fb, #b6e6ff, #97e9ff);
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    padding-top: 80px;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#text{
+   
+    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-left: 80px;
+    padding-right: 30px;
+   
+}
+#text h1{
+    font-size: 38px;
+    padding-bottom: 20px;
+}
+#text h6{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+#text button{
+    background-color: #00AEF5;
+    width: 190px;
+    height: 45px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+#image{
+    padding-top: 80px;
+    padding-right: 30px;
+}
+.citylocation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.citylocation p{
+  font-size: 20px;
+}

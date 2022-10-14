@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    {{>navbar}}
+    <section class="weather">
+        <div class="searchInput">
+            <input type="text" id="search" placeholder="enter city name">
+            <input type="submit" id="btn" value="Search">
+        </div>
+        <div class="citylocation">
+            <img width="35px" height="35px" src="/images/location.png" alt="">
+            <p id="cityName">Banglore</p>
+        </div>
+        <div class="weatherInfo">
+            <div class="card" id="temperature">
+                <img width="130px" src="/images/sunicon.png" alt="">
+                <h3>Temperature</h3>
+                <span id="temperature_value">0</span><span><sup>0</sup>c</span>
+            </div>
+            <div class="card" id="humidity">
+                <img width="130px" src="/images/Humidity_icon-icons.com_52507 (1).png" alt="">
+                <h3>Humidity</h3>
+                <span id="humidity_value">30</span><span>%</span>
+            </div>
+            <div class="card" id="wind">
+                <img width="130px" src="/images/cloud_wind_icon-icons.com_62487.png" alt="">
+                <h3>Wind</h3>
+                <span id="Wind_value">7</span><span> Km/hr</span>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+    <script src="/js/weather.js"></script>
+</body>
+</html>
